@@ -190,13 +190,13 @@
   .season-name.cny     { color:#c0392b; }
   .season-name.off     { color:#2ecc71; }
   .season-name.standard{ color:#8a9aaa; }
-  .season-row-dates { padding:20px 32px; display:flex; flex-direction:column; gap:10px; align-items:flex-start; }
+  .season-row-dates { padding:20px 32px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
   .season-chip { font-family:'Bebas Neue',sans-serif; font-size:13px; letter-spacing:2px; padding:6px 14px; border-radius:2px; white-space:nowrap; }
   .season-chip.peak    { background:rgba(192,57,43,.2); border:1px solid rgba(192,57,43,.4); color:#e74c3c; }
   .season-chip.cny     { background:rgba(146,43,33,.25); border:1px solid rgba(146,43,33,.5); color:#e57373; }
   .season-chip.off     { background:rgba(39,174,96,.15); border:1px solid rgba(39,174,96,.35); color:#2ecc71; }
   .season-chip.standard{ background:rgba(138,154,170,.1); border:1px solid rgba(138,154,170,.4); color:#8a9aaa; }
-  .season-chip-note { font-size:13px; color:rgba(245,243,239,.35); letter-spacing:.5px; display:inline; margin-left:10px; }
+  .season-chip-note { font-size:13px; color:rgba(245,243,239,.35); letter-spacing:.5px; align-self:center; }
   @media(max-width:768px){
     .calendar-section { padding:64px 24px; }
     .season-row { grid-template-columns:1fr; }
@@ -484,7 +484,7 @@
   <div class="hero-bg" id="heroBg"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <p class="hero-season-label">2026 — 2027 SEASON · ECHIGO YUZAWA</p>
+    <p class="hero-season-label">2026 — 2027 · ECHIGO YUZAWA</p>
     <span class="hero-title-main">越後湯澤</span>
     <span class="hero-title-sub">私人課</span>
     <span class="hero-title-en">PRIVATE LESSON · プライベートレッスン</span>
@@ -641,7 +641,7 @@
     <div class="reveal">
       <p class="section-eyebrow" style="color:rgba(44,53,64,.6);">Course Pricing</p>
       <h2 class="section-heading" style="color:#ffffff;">課程費用</h2>
-      <p class="section-heading-jp" style="color:rgba(44,53,64,.45);">コース料金</p>
+      <p class="section-heading-jp" style="color:rgba(245,243,239,.35);">コース料金</p>
     </div>
 
     <!-- Price image placeholder -->
@@ -657,12 +657,12 @@
         <p class="surcharge-desc">1–3 人共用課程費用。每班最多 5 人。</p>
       </div>
       <div class="surcharge-item">
-        <p class="surcharge-amount">+1,300<span>NT$</span></p>
+        <p class="surcharge-amount">+1,300<span>NT$/天</span></p>
         <h4 class="surcharge-title">指定費（教練 / 風格）</h4>
         <p class="surcharge-desc">指定特定教練、指定滑雪風格（Carving、Park 等）。</p>
       </div>
       <div class="surcharge-item">
-        <p class="surcharge-amount">+1,300<span>NT$</span></p>
+        <p class="surcharge-amount">+1,300<span>NT$/天</span></p>
         <h4 class="surcharge-title">湯澤區其他雪場指定費</h4>
         <p class="surcharge-desc">指定石打丸山以外的越後湯澤區雪場（神樂、神立、GALA、NASPA 等）。</p>
       </div>
@@ -687,7 +687,7 @@
       </div>
       <div class="season-row-dates">
         <span class="season-chip peak">12/25 – 1/3</span><span class="season-chip-note">聖誕跨年</span>
-        <span class="season-chip peak">1/18 – 2/3</span><span class="season-chip-note">寒假＋春節前</span>
+        <span class="season-chip peak">1/18 – 2/3</span><span class="season-chip-note">寒假與春節前</span>
         <span class="season-chip peak">2/4 – 2/10</span><span class="season-chip-note">除夕至初六，雪季最高峰</span>
         <span class="season-chip peak">2/11 – 2/27</span><span class="season-chip-note">春節後＋228前</span>
       </div>
