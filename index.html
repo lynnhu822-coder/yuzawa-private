@@ -184,19 +184,19 @@
   .season-dot.peak    { background:#c0392b; box-shadow:0 0 8px rgba(192,57,43,.5); }
   .season-dot.cny     { background:#922b21; box-shadow:0 0 8px rgba(146,43,33,.5); }
   .season-dot.off     { background:#27ae60; box-shadow:0 0 8px rgba(39,174,96,.4); }
-  .season-dot.standard{ background:rgba(245,243,239,.3); }
+  .season-dot.standard{ background:#8a9aaa; }
   .season-name { font-family:'Bebas Neue',sans-serif; font-size:15px; letter-spacing:3px; }
   .season-name.peak    { color:#e74c3c; }
   .season-name.cny     { color:#c0392b; }
   .season-name.off     { color:#2ecc71; }
-  .season-name.standard{ color:rgba(245,243,239,.5); }
-  .season-row-dates { padding:20px 32px; display:flex; flex-wrap:wrap; gap:8px; align-items:center; }
+  .season-name.standard{ color:#8a9aaa; }
+  .season-row-dates { padding:20px 32px; display:flex; flex-direction:column; gap:10px; align-items:flex-start; }
   .season-chip { font-family:'Bebas Neue',sans-serif; font-size:13px; letter-spacing:2px; padding:6px 14px; border-radius:2px; white-space:nowrap; }
   .season-chip.peak    { background:rgba(192,57,43,.2); border:1px solid rgba(192,57,43,.4); color:#e74c3c; }
   .season-chip.cny     { background:rgba(146,43,33,.25); border:1px solid rgba(146,43,33,.5); color:#e57373; }
   .season-chip.off     { background:rgba(39,174,96,.15); border:1px solid rgba(39,174,96,.35); color:#2ecc71; }
-  .season-chip.standard{ background:rgba(245,243,239,.05); border:1px solid rgba(245,243,239,.15); color:rgba(245,243,239,.5); }
-  .season-chip-note { font-size:13px; color:rgba(245,243,239,.35); letter-spacing:.5px; align-self:center; }
+  .season-chip.standard{ background:rgba(138,154,170,.1); border:1px solid rgba(138,154,170,.4); color:#8a9aaa; }
+  .season-chip-note { font-size:13px; color:rgba(245,243,239,.35); letter-spacing:.5px; display:inline; margin-left:10px; }
   @media(max-width:768px){
     .calendar-section { padding:64px 24px; }
     .season-row { grid-template-columns:1fr; }
@@ -490,7 +490,7 @@
     <span class="hero-title-en">PRIVATE LESSON · プライベートレッスン</span>
     <div class="hero-actions">
       <a href="#calculator" class="btn-primary">立即試算費用</a>
-      <a href="https://m.me/iski.tw" target="_blank" class="btn-ghost">諮詢客服</a>
+      <a href="https://m.me/iski.tw" target="_blank" class="btn-ghost">客服報名</a>
     </div>
   </div>
   <div class="scroll-hint">
@@ -579,7 +579,6 @@
     <div class="course-meta-item">
       <p class="meta-label">課程目標</p>
       <p class="meta-value">滑行修正<br>指定特殊風格</p>
-      <p class="meta-note">Carving、不整地、樹林、Park、平花等風格皆可指定</p>
     </div>
     <div class="course-meta-item">
       <p class="meta-label">上課人數</p>
@@ -587,8 +586,8 @@
       <p class="meta-note">建議程度相近一起報名，超過 3 人每多 1 位加收 NT$2,000</p>
     </div>
     <div class="course-meta-item">
-      <p class="meta-label">預約期間</p>
-      <p class="meta-value"><span class="accent-blue">12/21</span> – <span class="accent-blue">3/19</span></p>
+      <p class="meta-label">課程期間</p>
+      <p class="meta-value"><span class="accent-blue">2026/12/21</span> – <span class="accent-blue">2027/03/19</span></p>
 
     </div>
     <div class="course-meta-item">
@@ -610,14 +609,14 @@
 
   <!-- TIME VISUAL -->
   <div class="time-visual reveal" style="margin-top:2px;">
-    <p class="time-visual-label">上課時間結構</p>
+    <p class="time-visual-label">上課時間</p>
     <div class="time-bar-wrap">
       <div class="time-seg time-seg-teaching">
         <span class="time-seg-label">教學</span>
         <span class="time-seg-sub">2.5 HRS</span>
       </div>
       <div class="time-seg time-seg-break">
-        <span class="time-seg-label" style="font-size:13px;">午休</span>
+        <span class="time-seg-label" style="font-size:13px;">休</span>
         <span class="time-seg-sub">1 HR</span>
       </div>
       <div class="time-seg time-seg-teaching">
@@ -641,7 +640,7 @@
   <div class="pricing-inner">
     <div class="reveal">
       <p class="section-eyebrow" style="color:rgba(44,53,64,.6);">Course Pricing</p>
-      <h2 class="section-heading" style="color:var(--ink);">課程費用</h2>
+      <h2 class="section-heading" style="color:#ffffff;">課程費用</h2>
       <p class="section-heading-jp" style="color:rgba(44,53,64,.45);">コース料金</p>
     </div>
 
@@ -653,19 +652,19 @@
     <!-- Surcharges -->
     <div class="surcharge-grid reveal" style="margin-top:2px;">
       <div class="surcharge-item">
-        <p class="surcharge-amount">+2,000<span>NT$</span></p>
+        <p class="surcharge-amount">+2,000<span>NT$/人</span></p>
         <h4 class="surcharge-title">人數加收（第4、5人）</h4>
-        <p class="surcharge-desc">1–3 人共用課程費用。超過 3 人，每增加 1 人加收 NT$2,000，每班最多 5 人。</p>
+        <p class="surcharge-desc">1–3 人共用課程費用。每班最多 5 人。</p>
       </div>
       <div class="surcharge-item">
         <p class="surcharge-amount">+1,300<span>NT$</span></p>
-        <h4 class="surcharge-title">指定費（教練 / 風格 / 性別）</h4>
-        <p class="surcharge-desc">指定特定教練、指定滑雪風格（Carving、Park 等）或指定教練性別，任一條件加收 NT$1,300／天。</p>
+        <h4 class="surcharge-title">指定費（教練 / 風格）</h4>
+        <p class="surcharge-desc">指定特定教練、指定滑雪風格（Carving、Park 等）。</p>
       </div>
       <div class="surcharge-item">
         <p class="surcharge-amount">+1,300<span>NT$</span></p>
         <h4 class="surcharge-title">湯澤區其他雪場指定費</h4>
-        <p class="surcharge-desc">指定石打丸山以外的越後湯澤區雪場（神樂、神立、GALA、NASPA 等）加收 NT$1,300／天。</p>
+        <p class="surcharge-desc">指定石打丸山以外的越後湯澤區雪場（神樂、神立、GALA、NASPA 等）。</p>
       </div>
     </div>
   </div>
@@ -687,14 +686,10 @@
         <span class="season-name peak">旺季</span>
       </div>
       <div class="season-row-dates">
-        <span class="season-chip peak">12/25 – 1/3</span>
-        <span class="season-chip-note">聖誕跨年</span>
-        <span class="season-chip peak">1/18 – 2/3</span>
-        <span class="season-chip-note">寒假＋春節前</span>
-        <span class="season-chip peak">2/4 – 2/10</span>
-        <span class="season-chip-note">除夕至初六，雪季最高峰</span>
-        <span class="season-chip peak">2/11 – 2/27</span>
-        <span class="season-chip-note">春節後＋228前</span>
+        <span class="season-chip peak">12/25 – 1/3</span><span class="season-chip-note">聖誕跨年</span>
+        <span class="season-chip peak">1/18 – 2/3</span><span class="season-chip-note">寒假＋春節前</span>
+        <span class="season-chip peak">2/4 – 2/10</span><span class="season-chip-note">除夕至初六，雪季最高峰</span>
+        <span class="season-chip peak">2/11 – 2/27</span><span class="season-chip-note">春節後＋228前</span>
       </div>
     </div>
 
@@ -704,10 +699,8 @@
         <span class="season-name off">淡季</span>
       </div>
       <div class="season-row-dates">
-        <span class="season-chip off">1/4 – 1/17</span>
-        <span class="season-chip-note">元旦假期後</span>
-        <span class="season-chip off">2/28 – 3/5</span>
-        <span class="season-chip-note">228連假後</span>
+        <span class="season-chip off">1/4 – 1/17</span><span class="season-chip-note">元旦假期後</span>
+        <span class="season-chip off">2/28 – 3/5</span><span class="season-chip-note">228連假後</span>
       </div>
     </div>
 
@@ -717,14 +710,13 @@
         <span class="season-name standard">標準</span>
       </div>
       <div class="season-row-dates">
-        <span class="season-chip standard">12/21 – 12/24</span>
-        <span class="season-chip-note">開季初期</span>
-        <span class="season-chip standard">3/6 – 3/19</span>
-        <span class="season-chip-note">三月尾季</span>
+        <span class="season-chip standard">12/21 – 12/24</span><span class="season-chip-note">開季初期</span>
+        <span class="season-chip standard">3/6 – 3/19</span><span class="season-chip-note">三月尾季</span>
       </div>
     </div>
 
   </div>
+  <p style="font-size:13px;color:rgba(245,243,239,.45);letter-spacing:.5px;margin-top:20px;">＊ 價格依照淡旺季而有所調整</p>
 </section>
 
 <!-- PRICE CALCULATOR -->
@@ -800,7 +792,7 @@
           <label class="calc-toggle">
             <input type="checkbox" id="toggleCoach">
             <span class="calc-toggle-track"></span>
-            <span class="calc-toggle-label">指定教練 / 風格 / 性別</span>
+            <span class="calc-toggle-label">指定教練 / 風格</span>
             <span class="calc-toggle-fee">+$1,300/天</span>
           </label>
 
@@ -910,7 +902,7 @@
     </div>
     <div class="note-row">
       <span class="note-num">09</span>
-      <p class="note-text">如指定特定教練、指定滑雪風格（Carving、不整地、樹林、Park、平花等特殊滑雪玩家風格）或指定教練性別，課程每天將酌收 <strong>NT$1,300</strong>（需視教練實際課程時間安排，指定並非絕對，務必事先告知學生）。</p>
+      <p class="note-text">如指定特定教練、指定滑雪風格（Carving、不整地、樹林、Park、平花等特殊滑雪玩家風格），課程每天將酌收 <strong>NT$1,300</strong>（需視教練實際課程時間安排，指定並非絕對，務必事先告知學生）。</p>
     </div>
     <div class="note-row">
       <span class="note-num">10</span>
