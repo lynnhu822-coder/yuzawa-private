@@ -4,7 +4,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
-<title>越後湯澤 私人課 · iSKI 滑雪學校 26/27</title>
+<title>iSKI 日本滑雪學校｜26/27 雪季課程</title>
+<link rel="icon" type="image/png" href="/image/catalog/logo_2-min.png">
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://www.iski.com.tw/ski-school/yuzawa?category=private" />
+<meta property="og:title" content="iSKI 日本滑雪學校｜26/27 雪季課程" />
+<meta property="og:description" content="專業中文教練、日本人氣雪場、系統化教學課程。無論初學或進階，iSKI 陪你愛上滑雪。" />
+<meta property="og:image" content="https://www.iski.com.tw/image/catalog/logo_2-min.png" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@300;400;700&family=Bebas+Neue&family=Noto+Sans+TC:wght@300;400;700&family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -76,8 +82,8 @@
   .btn-primary::after { content:''; position:absolute; left:-100%; top:0; width:100%; height:100%; background:var(--brand); transition:left .3s ease; z-index:-1; }
   .btn-primary:hover { color:var(--snow); }
   .btn-primary:hover::after { left:0; }
-  .btn-ghost { font-family:'Bebas Neue',sans-serif; font-size:14px; letter-spacing:3px; color:rgba(245,243,239,.82); text-decoration:none; display:inline-flex; align-items:center; gap:8px; border:1px solid rgba(245,243,239,.3); padding:15px 22px; transition:all .3s; }
-  .btn-ghost:hover { color:var(--snow); border-color:rgba(245,243,239,.65); background:rgba(245,243,239,.06); }
+  .btn-ghost { font-family:'Bebas Neue',sans-serif; font-size:13px; letter-spacing:3px; color:var(--ink); text-decoration:none; display:inline-flex; align-items:center; gap:8px; background:var(--yellow); border:1px solid var(--yellow); padding:15px 28px; transition:all .3s; }
+  .btn-ghost:hover { background:var(--yellow-dark); border-color:var(--yellow-dark); color:var(--ink); }
   .scroll-hint { position:absolute; bottom:36px; right:60px; z-index:2; display:flex; flex-direction:column; align-items:center; gap:8px; animation:fadeUp 1s ease 1s both; }
   .scroll-hint span { font-size:9px; letter-spacing:3px; color:rgba(245,243,239,.52); writing-mode:vertical-rl; text-transform:uppercase; }
   .scroll-line { width:1px; height:60px; background:linear-gradient(to bottom,rgba(245,243,239,.28),transparent); animation:scrollPulse 2s ease infinite; }
@@ -121,8 +127,9 @@
   .suit-card:nth-child(3)::before { background:radial-gradient(ellipse at 100% 100%, rgba(200,218,234,.1) 0%, transparent 70%); }
   .suit-card:hover { border-color:rgba(245,243,239,.3); }
   .suit-card:hover::before { opacity:1; }
-  .suit-card-num { font-family:'Bebas Neue',sans-serif; font-size:56px; line-height:1; color:rgba(245,243,239,.07); margin-bottom:24px; position:relative; z-index:1; }
-  .suit-icon { font-size:28px; margin-bottom:20px; position:relative; z-index:1; }
+  .suit-card-num { display:none; }
+  .suit-icon { width:80px; height:80px; border-radius:50%; margin-bottom:20px; position:relative; z-index:1; display:inline-flex; align-items:center; justify-content:center; }
+  .suit-icon img { width:44px; height:44px; object-fit:contain; }
   .suit-card-title { font-family:'Shippori Mincho',serif; font-size:20px; font-weight:700; color:var(--snow); margin-bottom:14px; letter-spacing:1.5px; position:relative; z-index:1; }
   .suit-card-desc { font-size:15px; color:rgba(245,243,239,.68); line-height:2; letter-spacing:.4px; position:relative; z-index:1; }
   .suit-card-accent { display:block; width:28px; height:2px; background:var(--yellow); margin-bottom:20px; position:relative; z-index:1; transition:width .4s; }
@@ -135,7 +142,7 @@
   .course-section .section-eyebrow::before { background:rgba(0,53,142,.35); }
   .course-section .section-heading { color:var(--ink); }
   .course-section .section-heading-jp { color:rgba(44,53,64,.4); }
-  .course-meta-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px; margin-bottom:2px; }
+  .course-meta-grid { display:grid; grid-template-columns:1fr 1fr; gap:2px; margin-bottom:2px; }
   .course-meta-item { background:#f7f8fa; border:1px solid rgba(0,53,142,.1); padding:28px 32px; }
   .meta-label { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:var(--charcoal); margin-bottom:8px; opacity:.7; }
   .meta-value { font-family:'Shippori Mincho',serif; font-size:18px; font-weight:700; color:var(--ink); letter-spacing:1px; line-height:1.6; }
@@ -170,41 +177,71 @@
   .surcharge-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:2px; margin-bottom:2px; }
   .surcharge-item { background:var(--ink); border:1px solid rgba(245,243,239,.1); padding:28px 32px; transition:border-color .3s; }
   .surcharge-item:hover { border-color:rgba(212,245,60,.3); }
-  .surcharge-amount { font-family:'Bebas Neue',sans-serif; font-size:36px; letter-spacing:3px; color:var(--yellow); line-height:1; margin-bottom:6px; }
-  .surcharge-amount span { font-size:16px; letter-spacing:2px; color:rgba(212,245,60,.7); margin-left:4px; }
+  .surcharge-amount { font-family:'Bebas Neue',sans-serif; font-size:36px; letter-spacing:3px; color:#ffffff; line-height:1; margin-bottom:6px; }
+  .surcharge-amount span { font-size:16px; letter-spacing:2px; color:rgba(255,255,255,.7); margin-left:4px; }
   .surcharge-title { font-family:'Shippori Mincho',serif; font-size:15px; font-weight:700; color:var(--snow); margin-bottom:8px; letter-spacing:1px; }
   .surcharge-desc { font-size:14px; color:rgba(245,243,239,.55); letter-spacing:.5px; line-height:1.9; }
 
   /* ── SEASON SUMMARY ── */
   .calendar-section { padding:100px 60px; max-width:1200px; margin:0 auto; }
-  .season-rows { display:flex; flex-direction:column; gap:2px; margin-top:56px; }
-  .season-row { display:grid; grid-template-columns:160px 1fr; align-items:start; gap:0; background:var(--ink-mid); border:1px solid rgba(245,243,239,.08); overflow:hidden; transition:border-color .3s; }
-  .season-row:hover { border-color:rgba(245,243,239,.2); }
-  .season-row-label { padding:28px 28px; display:flex; align-items:center; gap:12px; border-right:1px solid rgba(245,243,239,.06); }
-  .season-dot { width:10px; height:10px; border-radius:50%; flex-shrink:0; }
-  .season-dot.peak    { background:#c0392b; box-shadow:0 0 8px rgba(192,57,43,.5); }
-  .season-dot.cny     { background:#922b21; box-shadow:0 0 8px rgba(146,43,33,.5); }
-  .season-dot.off     { background:#27ae60; box-shadow:0 0 8px rgba(39,174,96,.4); }
-  .season-dot.standard{ background:#8a9aaa; }
-  .season-name { font-family:'Bebas Neue',sans-serif; font-size:15px; letter-spacing:3px; }
-  .season-name.peak    { color:#e74c3c; }
-  .season-name.cny     { color:#c0392b; }
-  .season-name.off     { color:#2ecc71; }
-  .season-name.standard{ color:#8a9aaa; }
-  .season-row-dates { padding:20px 32px; display:flex; flex-direction:column; gap:10px; align-items:flex-start; }
-  .season-chip { font-family:'Bebas Neue',sans-serif; font-size:13px; letter-spacing:2px; padding:6px 14px; border-radius:2px; white-space:nowrap; }
-  .season-chip.peak    { background:rgba(192,57,43,.2); border:1px solid rgba(192,57,43,.4); color:#e74c3c; }
-  .season-chip.cny     { background:rgba(146,43,33,.25); border:1px solid rgba(146,43,33,.5); color:#e57373; }
-  .season-chip.off     { background:rgba(39,174,96,.15); border:1px solid rgba(39,174,96,.35); color:#2ecc71; }
-  .season-chip.standard{ background:rgba(138,154,170,.1); border:1px solid rgba(138,154,170,.4); color:#8a9aaa; }
-  .season-chip-note { font-size:13px; color:rgba(245,243,239,.35); letter-spacing:.5px; align-self:center; }
-  .season-pair { display:flex; align-items:center; gap:8px; flex-wrap:nowrap; }
+  /* ── SEASON STACK：mobile 疊卡 ── */
+  .season-stack-wrap { position:relative; margin-top:56px; transition:height .3s ease; }
+  .season-card {
+    position:absolute; top:0; left:0;
+    width:68%; border-radius:4px;
+    padding:40px 48px;
+    height:auto;
+    cursor:pointer;
+    transition:transform .4s cubic-bezier(.25,.46,.45,.94), opacity .4s, box-shadow .4s;
+    user-select:none;
+  }
+  .season-card[data-pos="0"] { transform:translateX(0) scale(1); opacity:1; z-index:3; background:rgba(255,255,255,.98); box-shadow:0 8px 40px rgba(0,0,0,.35); cursor:pointer; }
+  .season-card[data-pos="1"] { transform:translateX(28%) scale(0.93); opacity:.9; z-index:2; background:rgba(255,255,255,.98); box-shadow:0 4px 20px rgba(0,0,0,.15); }
+  .season-card[data-pos="2"] { transform:translateX(48%) scale(0.87); opacity:.8; z-index:1; background:rgba(255,255,255,.98); box-shadow:0 2px 10px rgba(0,0,0,.1); }
+  /* ── SEASON STACK：desktop 3欄展開 ── */
+  @media(min-width:769px){
+    .season-stack-wrap { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; height:auto !important; position:static; }
+    .season-card { position:static; width:100%; height:auto; transform:none !important; opacity:1 !important; cursor:default; box-shadow:0 4px 24px rgba(0,0,0,.18); background:rgba(255,255,255,.98); }
+    .season-nav { display:none; }
+  }
+  .season-card-label { font-family:'Bebas Neue',sans-serif; font-size:13px; letter-spacing:4px; margin-bottom:16px; }
+  .season-card-label.standard { color:#c8daea; }
+  .season-card-label.peak     { color:#e74c3c; }
+  .season-card-label.off      { color:#2ecc71; }
+  .season-card-title { font-family:'Bebas Neue',sans-serif; font-size:48px; letter-spacing:4px; line-height:1; margin-bottom:28px; color:var(--ink); }
+  .season-chips { display:flex; flex-direction:column; gap:10px; }
+  .season-date-row { display:flex; align-items:center; gap:10px; flex-wrap:wrap; }
+  .season-chip { font-family:'Bebas Neue',sans-serif; font-size:15px; letter-spacing:2px; padding:8px 16px; border-radius:2px; display:inline-block; width:fit-content; flex-shrink:0; }
+  .season-chip.standard { background:#eef6fb; border:1px solid #c8daea; color:var(--ink); }
+  .season-chip.peak     { background:rgba(231,76,60,.08); border:1px solid rgba(231,76,60,.3); color:#c0392b; }
+  .season-chip.off      { background:rgba(46,204,113,.08); border:1px solid rgba(46,204,113,.3); color:#27ae60; }
+  .season-date-note { font-size:13px; color:rgba(44,53,64,.55); letter-spacing:.3px; }
+  @media(max-width:768px){
+    .season-nav { display:flex; gap:3px; margin-top:16px; justify-content:flex-end; }
+    .season-nav-btn { display:flex; align-items:center; gap:8px; padding:12px 24px; background:rgba(245,243,239,.06); border:1px solid rgba(245,243,239,.15); color:rgba(245,243,239,.6); font-family:'Bebas Neue',sans-serif; font-size:14px; letter-spacing:2px; cursor:pointer; transition:all .2s; border-radius:2px; }
+    .season-nav-btn:hover { background:rgba(200,218,234,.15); border-color:#c8daea; color:#c8daea; }
+  }
   @media(max-width:768px){
     .calendar-section { padding:64px 24px; }
-    .season-row { grid-template-columns:1fr; }
-    .season-row-label { border-right:none; border-bottom:1px solid rgba(245,243,239,.06); padding:20px 20px; }
-    .season-row-dates { padding:16px 20px; }
+    .season-card { width:80%; padding:28px 28px; }
+    .season-card-title { font-size:36px; }
+    .season-card[data-pos="1"] { transform:translateX(18%) scale(0.93); }
+    .season-card[data-pos="2"] { transform:translateX(32%) scale(0.87); }
   }
+
+  /* 手機版：卡片右側「下一張」提示，僅最前面那張卡片顯示 */
+  .season-card-hint { display:none; }
+  @media(max-width:768px){
+    .season-card[data-pos="0"] .season-card-hint {
+      display:flex; flex-direction:column; align-items:center; gap:4px;
+      position:absolute; right:14px; top:50%; transform:translateY(-50%);
+      color:var(--brand); opacity:.55;
+      animation:seasonHintPulse 1.8s ease-in-out infinite;
+    }
+    .season-card-hint svg { display:block; }
+    .season-card-hint span { font-family:'Bebas Neue',sans-serif; font-size:11px; letter-spacing:2px; writing-mode:vertical-rl; }
+  }
+  @keyframes seasonHintPulse { 0%,100%{ transform:translateY(-50%) translateX(0); opacity:.4; } 50%{ transform:translateY(-50%) translateX(4px); opacity:.85; } }
 
   /* ── INTERACTIVE PRICE CALCULATOR ── */
   .calc-section { background:#1e2830; border-top:1px solid rgba(245,243,239,.06); }
@@ -216,7 +253,7 @@
   .calc-group-label { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:var(--mist); margin-bottom:16px; display:flex; align-items:center; gap:10px; }
   .calc-group-label::before { content:''; width:16px; height:1px; background:var(--mist); opacity:.5; }
   .calc-options { display:flex; flex-wrap:wrap; gap:8px; }
-  .calc-btn { font-family:'Bebas Neue',sans-serif; font-size:12px; letter-spacing:2px; padding:10px 18px; border:1px solid rgba(245,243,239,.2); background:transparent; color:rgba(245,243,239,.65); cursor:pointer; transition:all .25s; }
+  .calc-btn { font-family:'Noto Sans TC',sans-serif; font-size:12px; letter-spacing:2px; padding:10px 18px; border:1px solid rgba(245,243,239,.2); background:transparent; color:rgba(245,243,239,.65); cursor:pointer; transition:all .25s; }
   .calc-btn:hover { border-color:rgba(245,243,239,.5); color:var(--snow); }
   .calc-btn.active { background:var(--brand); border-color:var(--brand); color:var(--snow); }
   .calc-btn.active-yellow { background:var(--yellow); border-color:var(--yellow); color:var(--ink); }
@@ -262,13 +299,24 @@
   .notes-section .section-eyebrow::before { background:rgba(0,53,142,.35); }
   .notes-section .section-heading { color:var(--ink); }
   .notes-section .section-heading-jp { color:rgba(44,53,64,.4); }
-  .notes-list { display:flex; flex-direction:column; gap:2px; margin-top:48px; }
-  .note-row { display:grid; grid-template-columns:48px 1fr; gap:24px; align-items:flex-start; padding:28px 32px; background:#f7f8fa; border:1px solid rgba(0,53,142,.08); transition:border-color .3s; }
-  .note-row:hover { border-color:rgba(0,53,142,.3); background:#eef3fb; }
-  .note-num { font-family:'Bebas Neue',sans-serif; font-size:28px; line-height:1; color:rgba(0,53,142,.15); padding-top:3px; }
-  .note-text { font-size:15px; color:rgba(44,53,64,.72); line-height:2.1; letter-spacing:.4px; }
-  .note-text strong { color:var(--ink); }
-  .note-text .highlight { color:var(--brand); }
+  .notes-group { margin-top:48px; display:flex; flex-direction:column; gap:2px; }
+  .notes-group + .notes-group { margin-top:32px; }
+  .notes-group-label { font-size:11px; letter-spacing:3px; text-transform:uppercase; color:rgba(0,53,142,.5); margin-bottom:8px; display:flex; align-items:center; gap:10px; }
+  .notes-group-label::before { content:''; width:16px; height:1px; background:rgba(0,53,142,.3); }
+  .note-accordion { background:#f7f8fa; border:1px solid rgba(0,53,142,.08); }
+  .note-accordion + .note-accordion { border-top:none; }
+  .note-accordion summary { list-style:none; display:grid; grid-template-columns:36px 1fr 20px; gap:16px; align-items:center; padding:20px 24px; cursor:pointer; transition:background .2s; }
+  .note-accordion summary::-webkit-details-marker { display:none; }
+  .note-accordion summary:hover { background:#eef3fb; }
+  .note-accordion[open] summary { background:#eef3fb; border-bottom:1px solid rgba(0,53,142,.08); }
+  .note-accordion-num { font-family:'Bebas Neue',sans-serif; font-size:22px; line-height:1; color:rgba(0,53,142,.2); }
+  .note-accordion-title { font-size:15px; font-weight:700; color:var(--ink); letter-spacing:.5px; }
+  .note-accordion-arrow { font-size:14px; color:rgba(0,53,142,.4); transition:transform .25s; justify-self:end; }
+  .note-accordion[open] .note-accordion-arrow { transform:rotate(180deg); }
+  .note-accordion-body { padding:20px 24px 24px 76px; }
+  .note-accordion-body p { font-size:15px; color:rgba(44,53,64,.72); line-height:2; letter-spacing:.4px; }
+  .note-accordion-body strong { color:var(--ink); }
+  .note-accordion-body .highlight { color:var(--brand); }
 
   /* HELP SECTION */
   .help-section { padding:80px 60px; text-align:center; position:relative; overflow:hidden; border-top:1px solid rgba(245,243,239,.07); background:#3a4a5a; }
@@ -289,28 +337,31 @@
   .select-banner-inner { position:relative; z-index:1; padding:64px 60px; max-width:1200px; margin:0 auto; display:flex; justify-content:space-between; align-items:center; gap:40px; }
   .select-banner-tag { font-size:10px; letter-spacing:3px; text-transform:uppercase; color:rgba(245,243,239,.52); margin-bottom:10px; }
   .select-banner-title { font-family:'Shippori Mincho',serif; font-size:26px; font-weight:700; color:var(--snow); letter-spacing:2px; margin-bottom:8px; }
-  .select-banner-desc { font-size:15px; color:rgba(245,243,239,.6); letter-spacing:.5px; line-height:1.9; }
+  .select-banner-desc { font-size:16px; color:rgba(245,243,239,.6); letter-spacing:.5px; line-height:1.8; }
   .select-banner-link { font-family:'Bebas Neue',sans-serif; font-size:13px; letter-spacing:3px; color:var(--ice); text-decoration:none; display:inline-flex; align-items:center; gap:8px; border:1px solid rgba(200,218,234,.3); padding:13px 24px; transition:all .3s; flex-shrink:0; }
   .select-banner-link:hover { border-color:var(--ice); color:#fff; }
   .select-banner-link::after { content:'↗'; }
 
   /* FOOTER */
-  footer { border-top:1px solid rgba(245,243,239,.07); padding:40px 60px; display:flex; justify-content:space-between; align-items:center; background:var(--ink); flex-wrap:wrap; gap:20px; }
+  footer { border-top:1px solid rgba(245,243,239,.07); padding:40px 60px; display:flex; justify-content:space-between; align-items:center; background:var(--ink); }
   .footer-logo { font-family:'Bebas Neue',sans-serif; font-size:19px; letter-spacing:4px; color:rgba(245,243,239,.55); }
-  .footer-links { display:flex; gap:24px; list-style:none; flex-wrap:wrap; }
+  .footer-links { display:flex; gap:24px; list-style:none; }
   .footer-links a { font-size:10px; letter-spacing:2px; color:rgba(245,243,239,.65); text-decoration:none; transition:color .3s; }
   .footer-links a:hover { color:rgba(245,243,239,.85); }
   .footer-copy { font-size:10px; letter-spacing:1px; color:rgba(245,243,239,.38); }
-  .footer-social { display:flex; gap:16px; align-items:center; flex-wrap:wrap; }
-  .footer-social-link { display:flex; align-items:center; gap:7px; font-size:10px; letter-spacing:1.5px; color:rgba(245,243,239,.45); text-decoration:none; transition:color .3s; }
+  .footer-social { display:flex; gap:16px; align-items:center; justify-content:center; flex-wrap:nowrap; }
+  .footer-social-link { display:flex; align-items:center; gap:7px; font-size:12px; letter-spacing:1px; color:rgba(245,243,239,.45); text-decoration:none; transition:color .3s; }
   .footer-social-link:hover { color:rgba(245,243,239,.85); }
   .footer-social-link svg { flex-shrink:0; opacity:.6; transition:opacity .3s; }
   .footer-social-link:hover svg { opacity:1; }
   .footer-divider { width:1px; height:14px; background:rgba(245,243,239,.12); }
 
   /* FLOATING */
-  .floating-messenger { position:fixed; bottom:32px; right:32px; z-index:500; width:56px; height:56px; background:#0084FF; border-radius:50%; display:flex; align-items:center; justify-content:center; box-shadow:0 4px 20px rgba(0,132,255,.4); transition:transform .3s, box-shadow .3s; cursor:none; text-decoration:none; }
-  .floating-messenger:hover { transform:scale(1.1); box-shadow:0 6px 28px rgba(0,132,255,.6); }
+  .floating-messenger { position:fixed; bottom:32px; right:32px; z-index:500; background:#0084FF; border-radius:100px; display:inline-flex; align-items:center;padding:14px 22px 14px 18px; box-shadow:0 4px 24px rgba(0,132,255,.45); text-decoration:none; color:#fff; font-family:'Noto Sans TC', sans-serif; font-size:13px; letter-spacing:1.5px; font-weight:400; transition:padding .4s ease, border-radius .4s ease, box-shadow .3s, transform .3s; overflow:hidden; white-space:nowrap; cursor:none; }
+  .floating-messenger:hover { box-shadow:0 6px 32px rgba(0,132,255,.65); transform:translateY(-2px); }
+  .floating-messenger .fm-text { max-width:80px; opacity:1; transition:max-width .4s ease, opacity .3s ease; overflow:hidden; }
+  .floating-messenger.fm-collapsed { padding:16px; border-radius:50%; }
+  .floating-messenger.fm-collapsed .fm-text { max-width:0; opacity:0; }
 
   /* HAMBURGER */
   .hamburger-btn { display:flex; position:relative; z-index:1; background:none; border:none; cursor:pointer; padding:4px; flex-direction:column; gap:5px; }
@@ -318,10 +369,10 @@
   .hamburger-btn.open span:nth-child(1) { transform:translateY(6.5px) rotate(45deg); }
   .hamburger-btn.open span:nth-child(2) { opacity:0; }
   .hamburger-btn.open span:nth-child(3) { transform:translateY(-6.5px) rotate(-45deg); }
-  .mobile-menu { display:none; position:fixed; inset:0; z-index:99; background:rgba(26,28,30,.97); backdrop-filter:blur(12px); flex-direction:column; padding:100px 32px 48px; gap:0; overflow-y:auto; }
-  .mobile-menu.open { display:flex; }
+  .mobile-menu { display:none; position:fixed; top:0; right:0; bottom:0; width:100%; z-index:99; background:rgba(26,28,30,.97); backdrop-filter:blur(12px); flex-direction:column; padding:100px 32px 48px; gap:0; overflow-y:auto; transform:translateX(100%); transition:transform .35s ease; } @media(min-width:481px){ .mobile-menu { width:min(33vw, 320px); } }
+  .mobile-menu.open { display:flex; transform:translateX(0); }
   .mobile-menu-section { border-bottom:1px solid rgba(245,243,239,.08); padding:20px 0; }
-  .mobile-menu-label { font-size:9px; letter-spacing:3px; color:rgba(245,243,239,.3); text-transform:uppercase; margin-bottom:12px; }
+  .mobile-menu-label { font-size:12px; letter-spacing:3px; color:var(--yellow); text-transform:uppercase; margin-bottom:12px; }
   .mobile-menu-link { display:flex; justify-content:space-between; align-items:center; font-family:'Noto Sans TC',sans-serif; font-size:18px; font-weight:300; letter-spacing:2px; color:rgba(245,243,239,.85); text-decoration:none; padding:10px 0; transition:color .2s; }
   .mobile-menu-link:hover { color:var(--yellow); }
   .mobile-menu-link::after { content:'→'; font-size:14px; opacity:.4; }
@@ -379,13 +430,13 @@
 
     /* Pricing */
     .pricing-inner { padding:64px 24px; }
+    .price-image-wrap { margin-left:-24px; margin-right:-24px; }
     .surcharge-grid { grid-template-columns:1fr; }
     .surcharge-desc { font-size:15px; line-height:2.1; }
     .surcharge-amount { font-size:28px; }
 
     /* Calendar */
     .calendar-section { padding:64px 24px; }
-    .season-chip-note { font-size:14px; }
 
     /* Calculator */
     .calc-inner { padding:64px 24px; }
@@ -403,8 +454,9 @@
 
     /* Notes */
     .notes-section { padding:64px 24px; }
-    .note-row { grid-template-columns:36px 1fr; gap:16px; padding:22px 20px; }
-    .note-text { font-size:16px; line-height:2.2; }
+    .note-accordion summary { grid-template-columns:28px 1fr 20px; gap:12px; padding:16px 16px; }
+    .note-accordion-body { padding:16px 16px 20px 56px; }
+    .note-accordion-body p { font-size:15px; line-height:2.1; }
 
     /* Help */
     .help-section { padding:64px 24px; }
@@ -418,7 +470,7 @@
     .select-banner-link { text-align:center; justify-content:center; }
 
     /* Footer */
-    footer { padding:32px 24px; flex-direction:column; text-align:center; }
+    footer{flex-direction:column;gap:24px;text-align:center;} .footer-social{width:100%;justify-content:center;gap:12px;flex-wrap:nowrap;} .footer-social-link{font-size:11px;letter-spacing:.5px;}
     .footer-links { display:none; }
     .footer-social { justify-content:center; }
   }
@@ -432,7 +484,7 @@
 
 <!-- COUNTDOWN BAR -->
 <div class="countdown-bar" id="countdownBar">
-  <span>頭香優惠</span>
+  <span>超早鳥優惠</span>
   <div class="countdown-bar-nums">
     <span class="countdown-bar-num" id="cbDays">--</span><span class="countdown-bar-label">天</span>
     <span class="countdown-bar-sep">:</span>
@@ -442,43 +494,44 @@
     <span class="countdown-bar-sep">:</span>
     <span class="countdown-bar-num" id="cbSecs">--</span><span class="countdown-bar-label">秒</span>
   </div>
-  <a href="https://www.iski.com.tw/index.php?route=common/snowing_buy" target="_blank" style="font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:2px;color:var(--ink);text-decoration:none;border:1px solid rgba(0,0,0,.3);padding:3px 12px;transition:background .2s;" onmouseover="this.style.background='rgba(0,0,0,.08)'" onmouseout="this.style.background='transparent'">立即報名 →</a>
+  <a href="index.php?route=common/snowing_buy" target="_blank" style="font-family:'Bebas Neue',sans-serif;font-size:12px;letter-spacing:2px;color:var(--ink);text-decoration:none;border:1px solid rgba(0,0,0,.3);padding:3px 12px;transition:background .2s;" onmouseover="this.style.background='rgba(0,0,0,.08)'" onmouseout="this.style.background='transparent'">立即搶購 →</a>
 </div>
 
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
+  <a href="index.php?route=account/login" class="mobile-menu-link">會員中心</a>
   <div class="mobile-menu-section">
-    <p class="mobile-menu-label">更多私人課程</p>
-    <a href="#" class="mobile-menu-link">北海道手稻</a>
-    <a href="#" class="mobile-menu-link">北海道留壽都</a>
-    <a href="#" class="mobile-menu-link">東北藏王</a>
-    <a href="#" class="mobile-menu-link">CAMP 課程</a>
+    <p class="mobile-menu-label">雪上課程</p>
+    <a href="index.php?route=common/snowing_yuzawa&category=group" class="mobile-menu-link">越後湯澤 團體課</a>
+    <a href="index.php?route=common/snowing_hokkaido&category=teine_private" class="mobile-menu-link">手稻 私人課</a>
+    <a href="index.php?route=common/snowing_hokkaido&category=rusutsu_private" class="mobile-menu-link">留壽都 私人課</a>
+    <a href="index.php?route=common/snowing_zao&category=private" class="mobile-menu-link">藏王 私人課</a>
+    <a href="index.php?route=common/snowing_course&course=4" class="mobile-menu-link">CAMP 營</a>
   </div>
   <div class="mobile-menu-section">
     <p class="mobile-menu-label">雪場介紹</p>
-    <a href="#" class="mobile-menu-link">越後湯澤</a>
-    <a href="#" class="mobile-menu-link">北海道手稻</a>
-    <a href="#" class="mobile-menu-link">北海道留壽都</a>
-    <a href="#" class="mobile-menu-link">東北藏王</a>
+    <a href="index.php?route=common/snowing_yuzawa&category=info" class="mobile-menu-link">越後湯澤</a>
+    <a href="index.php?route=common/snowing_hokkaido&category=teine" class="mobile-menu-link">北海道手稻</a>
+    <a href="index.php?route=common/snowing_hokkaido&category=rusutsu" class="mobile-menu-link">北海道留壽都</a>
+    <a href="index.php?route=common/snowing_zao" class="mobile-menu-link">東北藏王</a>
   </div>
   <div class="mobile-menu-section">
     <p class="mobile-menu-label">服務</p>
-    <a href="#" class="mobile-menu-link">日本雪具租借&amp;倉儲</a>
-    <a href="#" class="mobile-menu-link">台灣滑雪課程</a>
-    <a href="https://www.iski.com.tw/login" target="_blank" class="mobile-menu-link">會員中心</a>
+    <a href="https://www.iski-select.com.tw/pages/rental" target="_blank" class="mobile-menu-link">日本雪具租借&amp;倉儲</a>
+    <a href="/" class="mobile-menu-link">iSKI首頁</a>
   </div>
-  <a href="https://www.iski.com.tw/index.php?route=common/snowing_buy" class="mobile-menu-cta" target="_blank">立即報名 →</a>
+  <a href="index.php?route=common/snowing_buy" class="mobile-menu-cta" target="_blank">立即報名 團體課程 →</a>
 </div>
 
 <!-- NAV -->
 <nav>
-  <a href="https://www.iski.com.tw/" class="nav-logo">
-    <img src="https://stage.iski.com.tw/image/catalog/snowing/01.home/link/M/M_Website_home logo01.png" alt="iSKI" style="height:28px;width:auto;display:block;">
-  </a>
-  <a href="https://www.iski.com.tw/index.php?route=common/snowing_buy" class="nav-cta" target="_blank">立即報名</a>
-  <button class="hamburger-btn" id="hamburgerBtn" aria-label="選單" onclick="toggleMobileMenu()">
-    <span></span><span></span><span></span>
-  </button>
+  <a href="/" class="nav-logo" target="_blank"><img src="https://stage.iski.com.tw/image/catalog/snowing/01.home/link/M/M_Website_home logo01.png" alt="iSKI" style="height:28px;width:auto;display:block;"></a>
+  <div style="display:flex;align-items:center;gap:12px;position:relative;z-index:1;">
+    <a href="index.php?route=common/snowing_buy" class="nav-cta" target="_blank">立即報名 團體課程</a>
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="選單" onclick="toggleMobileMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
 </nav>
 
 <!-- HERO -->
@@ -486,13 +539,16 @@
   <div class="hero-bg" id="heroBg"></div>
   <div class="hero-overlay"></div>
   <div class="hero-content">
-    <p class="hero-season-label">2026 — 2027 · ECHIGO YUZAWA</p>
+    <p class="hero-season-label">2627 SEASON</p>
     <span class="hero-title-main">越後湯澤</span>
     <span class="hero-title-sub">私人課</span>
     <span class="hero-title-en">PRIVATE LESSON · プライベートレッスン</span>
     <div class="hero-actions">
       <a href="#calculator" class="btn-primary">立即試算費用</a>
-      <a href="https://m.me/iski.tw" target="_blank" class="btn-ghost">客服報名</a>
+      <a href="http://m.me/iSKIclub2019" target="_blank" class="btn-ghost">諮詢客服</a>
+    </div>
+    <div style="padding:15px 0 0 0;">
+      <span style="font-family: 'Noto Sans TC', sans-serif;font-size:15px;color:var(--snow);letter-spacing:4px;margin-bottom:64px;">全台iSKI與高雄Easyski 門市皆可購課</span>
     </div>
   </div>
   <div class="scroll-hint">
@@ -530,7 +586,7 @@
     <a href="#calendar" class="page-nav-link">淡旺季日期</a>
     <a href="#calculator" class="page-nav-link">費用試算</a>
     <a href="#notes" class="page-nav-link">注意事項</a>
-    <a href="https://www.iski.com.tw/ski-school/yuzawa&category=group" class="page-nav-link external">湯澤團體課</a>
+    <a href="index.php?route=common/snowing_yuzawa&category=group" class="page-nav-link external">湯澤團體課</a>
   </div>
 </div>
 
@@ -545,22 +601,19 @@
     <div class="suit-grid">
       <div class="suit-card reveal reveal-delay-1">
         <span class="suit-card-accent"></span>
-        <div class="suit-card-num">01</div>
-        <div class="suit-icon">🎿</div>
+        <div class="suit-icon" style="background:rgba(0,53,142,.55);"><img src="https://www.iski.com.tw/image/catalog/%E6%97%A5%E6%9C%AC%E9%9B%AA%E5%A0%B4/landing%20page%202026/icon.snowboarder.png?_t=1782360909" alt="單人包班" style="filter:invert(1);"></div>
         <h3 class="suit-card-title">單人包班</h3>
         <p class="suit-card-desc">不想和陌生學員一同上課，或想要更有效率的學習，專屬教練一對一指導，讓你進步神速。</p>
       </div>
       <div class="suit-card reveal reveal-delay-2">
         <span class="suit-card-accent"></span>
-        <div class="suit-card-num">02</div>
-        <div class="suit-icon">👫</div>
+        <div class="suit-icon" style="background:rgba(212,245,60,.85);"><img src="https://www.iski.com.tw/image/catalog/%E6%97%A5%E6%9C%AC%E9%9B%AA%E5%A0%B4/landing%20page%202026/icon.bff.png?_t=1782360909" alt="閨蜜好友"></div>
         <h3 class="suit-card-title">閨蜜好友不打擾</h3>
         <p class="suit-card-desc">想要只屬於三五好友、情侶、閨蜜的時光，私人課給你最專屬難忘的滑雪回憶。</p>
       </div>
       <div class="suit-card reveal reveal-delay-3">
         <span class="suit-card-accent"></span>
-        <div class="suit-card-num">03</div>
-        <div class="suit-icon">👨‍👩‍👧</div>
+        <div class="suit-icon" style="background:rgba(200,218,234,.2);"><img src="https://www.iski.com.tw/image/catalog/%E6%97%A5%E6%9C%AC%E9%9B%AA%E5%A0%B4/landing%20page%202026/icon.family.png?_t=1782360909" alt="家庭滑雪" style="filter:invert(1);"></div>
         <h3 class="suit-card-title">家庭滑雪</h3>
         <p class="suit-card-desc">想跟家人一起滑雪，讓親子間有更好的學習互動，貼心的教練讓你不只學會滑雪，還有滿滿的家庭回憶。</p>
       </div>
@@ -580,38 +633,32 @@
   <div class="course-meta-grid reveal">
     <div class="course-meta-item">
       <p class="meta-label">課程目標</p>
-      <p class="meta-value">滑行修正<br>指定特殊風格</p>
+      <p class="meta-value">客製化課程安排<br>從零基礎到進階技巧都能精準學習</p>
+    </div>
+    <div class="course-meta-item">
+      <p class="meta-label">適合對象</p>
+      <p class="meta-value">親子家庭、兒童學員及進階滑雪愛好者</p>
+      <p class="meta-note">*<a href="#notes" style="color:var(--brand);text-decoration:underline;">詳見注意事項</a></p>
     </div>
     <div class="course-meta-item">
       <p class="meta-label">上課人數</p>
       <p class="meta-value"><span class="accent-yellow">1 – 5</span> 人</p>
-      <p class="meta-note">建議程度相近一起報名，超過 3 人每多 1 位加收 NT$2,000</p>
+      <p class="meta-note">建議程度相近一起報名</p>
     </div>
     <div class="course-meta-item">
       <p class="meta-label">課程期間</p>
-      <p class="meta-value"><span class="accent-blue">2026/12/21</span> – <span class="accent-blue">2027/03/19</span></p>
-
+      <p class="meta-value">2026年12月21日 ～ 2027年3月19日</p>
     </div>
-    <div class="course-meta-item">
+    <div class="course-meta-item" style="grid-column:span 2;">
       <p class="meta-label">上課地點</p>
-      <p class="meta-value">石打丸山</p>
+      <p class="meta-value">石打丸山雪場</p>
       <p class="meta-note">指定石打丸山以外雪場需加收雪場指定費 NT$1,300</p>
-    </div>
-    <div class="course-meta-item">
-      <p class="meta-label">課程時數</p>
-      <p class="meta-value"><span class="accent-yellow">5 小時</span>教學</p>
-      <p class="meta-note">含中間休息 1 小時，全天共 6 小時</p>
-    </div>
-    <div class="course-meta-item">
-      <p class="meta-label">幼兒分時</p>
-      <p class="meta-value">3 – 7 歲</p>
-      <p class="meta-note">未滿 7 歲幼兒可分時段一對一授課，另一時段換大人上課，需於課程備註說明</p>
     </div>
   </div>
 
   <!-- TIME VISUAL -->
   <div class="time-visual reveal" style="margin-top:2px;">
-    <p class="time-visual-label">上課時間</p>
+    <p class="time-visual-label">課程時數 ・ 5小時教學</p>
     <div class="time-bar-wrap">
       <div class="time-seg time-seg-teaching">
         <span class="time-seg-label">教學</span>
@@ -632,7 +679,7 @@
       <span class="time-tick">13:00</span>
       <span class="time-tick">15:30</span>
     </div>
-    <p class="time-note">上課時間可依學生需求調整開始時間，惟課程最晚須於 16:30 前結束（含休息時間）。每次上課皆為全天課程，無法拆分為半天。</p>
+    <p class="time-note"><a href="#notes" style="color:var(--brand);text-decoration:underline;">詳見注意事項 ↓</a></p>
   </div>
 </section>
 </div>
@@ -648,8 +695,9 @@
 
     <!-- Price image placeholder -->
     <div class="price-image-wrap reveal">
-      <img src="https://www.iski.com.tw/image/catalog/group/2526/2025newprice_private.png" alt="越後湯澤私人課程費用表" style="width:100%;display:block;">
+      <img src="https://www.iski.com.tw/image/catalog/%E6%97%A5%E6%9C%AC%E9%9B%AA%E5%A0%B4/landing%20page%202026/LINE_P202672_095325_new.jpg?_t=1782957261" alt="越後湯澤私人課程費用表" style="width:100%;display:block;">
     </div>
+    <p style="font-size:14px;color:var(--yellow);letter-spacing:.5px;margin-top:16px;">✦ 私人課程跨地區、跨日期混搭購買，同樣享多日課程優惠折扣</p>
 
     <!-- Surcharges -->
     <div class="surcharge-grid reveal" style="margin-top:2px;">
@@ -661,12 +709,12 @@
       <div class="surcharge-item">
         <p class="surcharge-amount">+1,300<span>NT$/天</span></p>
         <h4 class="surcharge-title">指定費（教練 / 風格）</h4>
-        <p class="surcharge-desc">指定特定教練、指定滑雪風格（Carving、Park 等）。</p>
+        <p class="surcharge-desc">指定特定教練、指定滑雪風格（Carving、Park 等），任一條件加收。</p>
       </div>
       <div class="surcharge-item">
         <p class="surcharge-amount">+1,300<span>NT$/天</span></p>
         <h4 class="surcharge-title">湯澤區其他雪場指定費</h4>
-        <p class="surcharge-desc">指定石打丸山以外的越後湯澤區雪場（神樂、神立、GALA、NASPA 等）。</p>
+        <p class="surcharge-desc">指定石打丸山以外的越後湯澤區雪場（湯澤中里、苗場、神樂、神立、GALA、NASPA 等）。</p>
       </div>
     </div>
   </div>
@@ -677,46 +725,55 @@
   <div class="reveal">
     <p class="section-eyebrow">Season Calendar</p>
     <h2 class="section-heading">淡旺季日期</h2>
-    <p class="section-heading-jp" style="color:rgba(245,243,239,.45);">シーズンカレンダー · 2026/12 — 2027/03</p>
+    <p class="section-heading-jp" style="color:rgba(245,243,239,.45);">シーズンカレンダー</p>
   </div>
 
-  <div class="season-rows reveal">
-
-    <div class="season-row">
-      <div class="season-row-label">
-        <span class="season-dot peak"></span>
-        <span class="season-name peak">旺季</span>
+  <div class="season-stack-wrap reveal" id="seasonStack">
+    <!-- 標準季 index=0 -->
+    <div class="season-card" data-index="0" data-pos="0" onclick="seasonCardClick(0)">
+      <p class="season-card-label standard">Standard Season</p>
+      <h3 class="season-card-title">標準季</h3>
+      <div class="season-chips">
+        <div class="season-date-row"><span class="season-chip standard">1/4 – 1/17</span><span class="season-date-note">元旦假期後</span></div>
+        <div class="season-date-row"><span class="season-chip standard">2/28 – 3/5</span><span class="season-date-note">228連假後</span></div>
       </div>
-      <div class="season-row-dates">
-        <div class="season-pair"><span class="season-chip peak">12/25 – 1/3</span><span class="season-chip-note">聖誕跨年</span></div>
-        <div class="season-pair"><span class="season-chip peak">1/18 – 2/3</span><span class="season-chip-note">寒假/春節前</span></div>
-        <div class="season-pair"><span class="season-chip peak">2/4 – 2/10</span><span class="season-chip-note">除夕至初六，雪季最高峰</span></div>
-        <div class="season-pair"><span class="season-chip peak">2/11 – 2/27</span><span class="season-chip-note">春節後/228前</span></div>
-      </div>
-    </div>
-
-    <div class="season-row">
-      <div class="season-row-label">
-        <span class="season-dot off"></span>
-        <span class="season-name off">淡季</span>
-      </div>
-      <div class="season-row-dates">
-        <div class="season-pair"><span class="season-chip off">1/4 – 1/17</span><span class="season-chip-note">元旦假期後</span></div>
-        <div class="season-pair"><span class="season-chip off">2/28 – 3/5</span><span class="season-chip-note">228連假後</span></div>
+      <div class="season-card-hint">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        <span>下一張</span>
       </div>
     </div>
-
-    <div class="season-row">
-      <div class="season-row-label">
-        <span class="season-dot standard"></span>
-        <span class="season-name standard">標準</span>
+    <!-- 旺季 index=1 -->
+    <div class="season-card" data-index="1" data-pos="1" onclick="seasonCardClick(1)">
+      <p class="season-card-label peak">Peak Season</p>
+      <h3 class="season-card-title">旺季</h3>
+      <div class="season-chips">
+        <div class="season-date-row"><span class="season-chip peak">12/25 – 1/3</span><span class="season-date-note">聖誕跨年</span></div>
+        <div class="season-date-row"><span class="season-chip peak">1/18 – 2/3</span><span class="season-date-note">寒假＋春節前</span></div>
+        <div class="season-date-row"><span class="season-chip peak">2/4 – 2/10</span><span class="season-date-note">除夕至初六</span></div>
+        <div class="season-date-row"><span class="season-chip peak">2/11 – 2/27</span><span class="season-date-note">春節後＋228前</span></div>
       </div>
-      <div class="season-row-dates">
-        <div class="season-pair"><span class="season-chip standard">12/21 – 12/24</span><span class="season-chip-note">開季初期</span></div>
-        <div class="season-pair"><span class="season-chip standard">3/6 – 3/19</span><span class="season-chip-note">三月尾季</span></div>
+      <div class="season-card-hint">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        <span>下一張</span>
       </div>
     </div>
-
+    <!-- 淡季 index=2 -->
+    <div class="season-card" data-index="2" data-pos="2" onclick="seasonCardClick(2)">
+      <p class="season-card-label off">Off Season</p>
+      <h3 class="season-card-title">淡季</h3>
+      <div class="season-chips">
+        <div class="season-date-row"><span class="season-chip off">12/21 – 12/24</span><span class="season-date-note">聖誕節前</span></div>
+        <div class="season-date-row"><span class="season-chip off">3/6 – 3/26</span><span class="season-date-note">三月尾季</span></div>
+      </div>
+      <div class="season-card-hint">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"/></svg>
+        <span>下一張</span>
+      </div>
+    </div>
+  </div>
+  <div class="season-nav">
+    <button class="season-nav-btn" onclick="seasonNav(-1)">← Prev</button>
+    <button class="season-nav-btn" onclick="seasonNav(1)">Next →</button>
   </div>
   <p style="font-size:13px;color:rgba(245,243,239,.45);letter-spacing:.5px;margin-top:20px;">＊ 價格依照淡旺季而有所調整</p>
 </section>
@@ -738,8 +795,7 @@
         <div class="calc-group">
           <p class="calc-group-label">購買波段</p>
           <div class="calc-options" id="ctrlTier">
-            <button class="calc-btn active" data-tier="17500">頭香優惠</button>
-            <button class="calc-btn" data-tier="17900">超早鳥</button>
+            <button class="calc-btn active" data-tier="17900">超早鳥</button>
             <button class="calc-btn" data-tier="18900">早鳥</button>
             <button class="calc-btn" data-tier="19900">季前價</button>
             <button class="calc-btn" data-tier="20900">季中價</button>
@@ -760,8 +816,8 @@
           <p class="calc-group-label">上課天數</p>
           <div class="calc-options" id="ctrlDays">
             <button class="calc-btn active" data-days="1" data-multi="1">1 天</button>
-            <button class="calc-btn" data-days="2" data-multi="0.95">2 天 (×95%)</button>
-            <button class="calc-btn" data-days="3" data-multi="0.9">3 天 (×90%)</button>
+            <button class="calc-btn" data-days="2" data-multi="0.95">2 天 (95折)</button>
+            <button class="calc-btn" data-days="3" data-multi="0.9">3 天 (9折)</button>
           </div>
         </div>
 
@@ -769,7 +825,7 @@
         <div class="calc-group">
           <p class="calc-group-label">淡旺季</p>
           <div class="calc-options" id="ctrlSeason">
-            <button class="calc-btn active" data-season="1" data-season-label="standard">標準季</button>
+            <button class="calc-btn active" data-season="1" data-season-label="standard">標準時段</button>
             <button class="calc-btn" data-season="0.75" data-season-label="off">淡季</button>
             <button class="calc-btn" data-season="1.2" data-season-label="peak">旺季</button>
           </div>
@@ -812,14 +868,14 @@
       <div class="calc-result reveal reveal-delay-2" id="calcResult">
         <p class="calc-result-label">費用試算結果</p>
         <div class="calc-result-main">
-          <div class="calc-result-price"><span class="unit">NT$</span><span id="totalDisplay">17,500</span></div>
-          <p class="calc-result-sub" id="resultSub">1 天 · 1–3 人 · 標準季 · 頭香優惠</p>
+          <div class="calc-result-price"><span class="unit">NT$</span><span id="totalDisplay">17,900</span></div>
+          <p class="calc-result-sub" id="resultSub">1 天 · 1–3 人 · 標準季 · 超早鳥</p>
           <span class="calc-season-badge standard" id="seasonBadge">標準季</span>
         </div>
         <div class="calc-result-breakdown" id="breakdown">
           <div class="calc-result-row">
             <span class="calc-result-row-label">牌價（每天）</span>
-            <span class="calc-result-row-val" id="rowBase">NT$ 17,500</span>
+            <span class="calc-result-row-val" id="rowBase">NT$ 17,900</span>
           </div>
           <div class="calc-result-row" id="rowSeasonWrap" style="display:none;">
             <span class="calc-result-row-label" id="rowSeasonLabel">旺季加價</span>
@@ -848,11 +904,11 @@
           <div class="calc-result-divider"></div>
           <div class="calc-result-row total-row">
             <span class="calc-result-row-label">總計（全程）</span>
-            <span class="calc-result-row-val" id="rowTotal">NT$ 17,500</span>
+            <span class="calc-result-row-val" id="rowTotal">NT$ 17,900</span>
           </div>
         </div>
         <div class="calc-cta">
-          <a href="https://m.me/iski.tw" target="_blank" class="btn-calc-cta">聯繫客服</a>
+          <a href="http://m.me/iSKIclub2019" target="_blank" class="btn-calc-cta">聯繫客服購課</a>
           <p style="font-size:13px;color:rgba(245,243,239,.35);letter-spacing:.5px;margin-top:12px;text-align:center;">以上為預估金額，實際費用依購買波段與日期為準</p>
         </div>
       </div>
@@ -869,51 +925,109 @@
     <p class="section-heading-jp">注意事項</p>
   </div>
 
-  <div class="notes-list reveal">
-    <div class="note-row">
-      <span class="note-num">01</span>
-      <p class="note-text">湯澤滑雪私人班上課時間為 <strong>09:30～15:30</strong>，時數共 6 小時（教學 5 小時＋中間休息 1 小時）。休息時間可依照學生需求做調整；上課時間可視學生需求與教練協調調動（須先提出備註申請），<strong>最晚須於 16:30 前結束課程</strong>。每次上課皆為全天課程，無法拆分成半天課程。</p>
-    </div>
-    <div class="note-row">
-      <span class="note-num">02</span>
-      <p class="note-text">私人課班級中如有 <strong>3 歲（含）至未滿 7 歲</strong>的幼兒，可採「分時」方式上課：幼兒一對一（建議不超過兩小時），另一時段換大人上課，需於報名時備註於課程備註欄中。滿 7 歲以上學員則比照一般私人課學生人數規定報名。</p>
-    </div>
-    <div class="note-row">
-      <span class="note-num">03</span>
-      <p class="note-text">本課程<strong>不含保險</strong>，參與雪上課程之學員應自行投保適當且有效之旅行保險，該保險應能涵蓋學員進行雪上活動時可能發生之意外或人身傷害風險。</p>
-    </div>
-    <div class="note-row">
-      <span class="note-num">04</span>
-      <p class="note-text">全程均依教練之指示、說明及規定參與本公司課程及使用任何滑雪設施，如有違反，學員應自負全責。</p>
-    </div>
-    <div class="note-row">
-      <span class="note-num">05</span>
-      <p class="note-text">請於課程開始前確認自身裝備準備完善：報到前請穿著好滑雪服裝（含防水雪衣雪褲）、雪具（雪板、雪鞋）、雪鏡及<strong>安全帽</strong>，並建議穿著護具（護膝、護肘、護手、護臀）。<span class="highlight">如未攜帶安全帽，依安全考量將無法進行課程。</span></p>
-    </div>
-    <div class="note-row">
-      <span class="note-num">06</span>
-      <p class="note-text">課程<strong>僅包含滑雪教練教學</strong>，未包含裝備租借、雪票、交通等費用。務必確認已準備好課程當天有效之雪場纜車券。</p>
-    </div>
-    <div class="note-row">
-      <span class="note-num">07</span>
-      <p class="note-text">日本滑雪私人班一堂課可招收 <strong>1～3 名學員</strong>（共用課程費用）；人數超過 3 名，每增加 1 名學員將多酌收 <strong>NT$2,000</strong>，每班最多 <strong>5 名</strong>學員。</p>
-    </div>
-    <div class="note-row">
-      <span class="note-num">08</span>
-      <p class="note-text">日本滑雪私人班可於非駐點雪場進行教學，但須在<strong>越後湯澤區</strong>內（車程 30 分鐘內）的雪場，並酌收教練調度費 <strong>NT$1,300</strong>，用以負擔教練的雪票費、交通成本及行政手續費等費用。</p>
-    </div>
-    <div class="note-row">
-      <span class="note-num">09</span>
-      <p class="note-text">如指定特定教練、指定滑雪風格（Carving、不整地、樹林、Park、平花等特殊滑雪玩家風格），課程每天將酌收 <strong>NT$1,300</strong>（需視教練實際課程時間安排，指定並非絕對，務必事先告知學生）。</p>
-    </div>
-    <div class="note-row">
-      <span class="note-num">10</span>
-      <p class="note-text">日本滑雪私人班的課程購買預約者，若<strong>缺席上課，視同放棄該堂課程</strong>，額外增加的學員則不在此限制之內。</p>
-    </div>
-    <div class="note-row">
-      <span class="note-num">11</span>
-      <p class="note-text">若遇天氣、雪場、教練等各種因素須取消全部或部分學員已預訂之課程，將協助重新安排其他時段的課程／其他雪場授課，或退還學員該課程專案之全部雪上徽章，之後將隨時以 Email 或官方 LINE 形式通知。</p>
-    </div>
+  <!-- 課程時間 -->
+  <div class="notes-group reveal">
+    <p class="notes-group-label">課程時間</p>
+    <details class="note-accordion" open>
+      <summary>
+        <span class="note-accordion-num">01</span>
+        <span class="note-accordion-title">上課時間與全天課程規定</span>
+        <span class="note-accordion-arrow">▾</span>
+      </summary>
+      <div class="note-accordion-body">
+        <p>湯澤滑雪私人課上課時間為 <strong>09:30～15:30</strong>，時數共 6 小時（教學 5 小時＋中間休息 1 小時）。休息時間可依照學生需求做調整；上課時間可視學生需求與教練協調調動（須先提出備註申請），<strong>最晚須於 16:30 前結束課程</strong>。每次上課皆為全天課程，無法拆分成半天課程。</p>
+      </div>
+    </details>
+    <details class="note-accordion" open>
+      <summary>
+        <span class="note-accordion-num">02</span>
+        <span class="note-accordion-title">幼兒分時上課規定（3–7 歲）</span>
+        <span class="note-accordion-arrow">▾</span>
+      </summary>
+      <div class="note-accordion-body">
+        <p>私人課班級中如有 <strong>3 歲（含）至未滿 7 歲</strong>的幼兒，可採「分時」方式上課：幼兒一對一（建議不超過兩小時），另一時段換大人上課，需於報名時備註於課程備註欄中。滿 7 歲以上學員則比照一般私人課學生人數規定報名。</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- 費用與裝備 -->
+  <div class="notes-group reveal">
+    <p class="notes-group-label">費用與裝備</p>
+    <details class="note-accordion">
+      <summary>
+        <span class="note-accordion-num">03</span>
+        <span class="note-accordion-title">保險須自理</span>
+        <span class="note-accordion-arrow">▾</span>
+      </summary>
+      <div class="note-accordion-body">
+        <p>本課程<strong>不含保險</strong>，參與雪上課程之學員應自行投保適當且有效之旅行保險，該保險應能涵蓋學員進行雪上活動時可能發生之意外或人身傷害風險。</p>
+      </div>
+    </details>
+    <details class="note-accordion">
+      <summary>
+        <span class="note-accordion-num">04</span>
+        <span class="note-accordion-title">裝備與安全帽規定</span>
+        <span class="note-accordion-arrow">▾</span>
+      </summary>
+      <div class="note-accordion-body">
+        <p>請於課程開始前確認自身裝備準備完善：報到前請穿著好滑雪服裝（含防水雪衣雪褲）、雪具（雪板、雪鞋）、雪鏡及<strong>安全帽</strong>，並建議穿著護具（護膝、護肘、護手、護臀）。<span class="highlight">如未攜帶安全帽，依安全考量將無法進行課程。</span></p>
+      </div>
+    </details>
+    <details class="note-accordion">
+      <summary>
+        <span class="note-accordion-num">05</span>
+        <span class="note-accordion-title">課程不含雪票與租借費用</span>
+        <span class="note-accordion-arrow">▾</span>
+      </summary>
+      <div class="note-accordion-body">
+        <p>課程<strong>僅包含滑雪教練教學</strong>，未包含裝備租借、雪票、交通等費用。務必確認已準備好課程當天有效之雪場纜車券。</p>
+      </div>
+    </details>
+  </div>
+
+  <!-- 取消與異動 -->
+  <div class="notes-group reveal">
+    <p class="notes-group-label">取消與異動</p>
+    <details class="note-accordion">
+      <summary>
+        <span class="note-accordion-num">06</span>
+        <span class="note-accordion-title">缺席視同放棄課程</span>
+        <span class="note-accordion-arrow">▾</span>
+      </summary>
+      <div class="note-accordion-body">
+        <p>日本滑雪私人課的課程購買預約者，若<strong>缺席上課，視同放棄該堂課程</strong>，額外增加的學員則不在此限制之內。</p>
+      </div>
+    </details>
+    <details class="note-accordion">
+      <summary>
+        <span class="note-accordion-num">07</span>
+        <span class="note-accordion-title">課程取消與安排異動</span>
+        <span class="note-accordion-arrow">▾</span>
+      </summary>
+      <div class="note-accordion-body">
+        <p>若遇天氣、雪場、教練等各種因素須取消全部或部分學員已預訂之課程，將協助重新安排其他時段的課程／其他雪場授課，或退還學員該課程專案之全部雪上徽章，之後將隨時以 Email 或官方 LINE 形式通知。</p>
+      </div>
+    </details>
+    <details class="note-accordion">
+      <summary>
+        <span class="note-accordion-num">08</span>
+        <span class="note-accordion-title">遵守教練指示規定</span>
+        <span class="note-accordion-arrow">▾</span>
+      </summary>
+      <div class="note-accordion-body">
+        <p>全程均依教練之指示、說明及規定參與本公司課程及使用任何滑雪設施，如有違反，學員應自負全責。</p>
+      </div>
+    </details>
+    <details class="note-accordion">
+      <summary>
+        <span class="note-accordion-num">09</span>
+        <span class="note-accordion-title">學員自行取消與退費規則</span>
+        <span class="note-accordion-arrow">▾</span>
+      </summary>
+      <div class="note-accordion-body">
+        <p>學員自行取消課程之退費規則（含分級退還比例、違約金及旺季例外規定），請參考完整合約條款。</p>
+      </div>
+    </details>
   </div>
 </section>
 </div>
@@ -924,11 +1038,10 @@
   <h2 class="help-title">立即諮詢</h2>
   <p class="help-sub">對課程有任何疑問，或想確認教練檔期、指定雪場可行性，歡迎透過 Messenger 或直接報名課程。</p>
   <div class="help-cta-group">
-    <a href="https://m.me/iski.tw" target="_blank" class="btn-messenger">
+    <a href="http://m.me/iSKIclub2019" target="_blank" class="btn-messenger">
       <svg width="18" height="18" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.145 2 11.259c0 2.883 1.308 5.465 3.374 7.234V22l3.079-1.688c.822.226 1.693.347 2.547.347 5.523 0 10-4.145 10-9.259C22 6.145 17.523 2 12 2zm1.007 12.464l-2.548-2.715-4.97 2.715 5.467-5.799 2.61 2.715 4.908-2.715-5.467 5.799z"/></svg>
       聯繫客服
     </a>
-    <a href="https://www.iski.com.tw/index.php?route=common/snowing_buy" target="_blank" class="btn-buy">立即購買課程</a>
   </div>
 </section>
 
@@ -946,51 +1059,41 @@
 </div>
 
 <!-- FOOTER -->
+
 <footer>
-  <span class="footer-logo"><a href="https://www.iski.com.tw/" target="_blank" style="display:block;"><img src="https://stage.iski.com.tw/image/catalog/snowing/01.home/link/M/M_Website_home logo01.png" alt="iSKI" style="height:22px;width:auto;display:block;opacity:0.55;"></a></span>
-  <ul class="footer-links">
-    <li><a href="#">越後湯澤</a></li>
-    <li><a href="#">北海道</a></li>
-    <li><a href="#">藏王</a></li>
-    <li><a href="#">留壽都</a></li>
-    <li><a href="#">課程購買</a></li>
-    <li><a href="https://www.iski-select.com.tw" target="_blank">雪物嚴選</a></li>
-    <li><a href="https://www.iski.com.tw/login" target="_blank">會員中心</a></li>
-    <li><a href="https://www.iski.com.tw/" target="_blank">官網首頁</a></li>
-  </ul>
+  <span class="footer-logo"><a href="/" style="display:block;"><img src="https://stage.iski.com.tw/image/catalog/snowing/01.home/link/M/M_Website_home logo01.png" alt="iSKI" style="height:22px;width:auto;display:block;opacity:0.55;"></a></span>
   <div class="footer-social">
-    <a href="#" class="footer-social-link" target="_blank" title="iSKI粉絲頁">
+    <!-- iSKI 粉絲頁 -->
+    <a href="https://www.facebook.com/iSKIclub2019/" class="footer-social-link" target="_blank" title="iSKI粉絲頁">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
       iSKI粉絲頁
     </a>
     <span class="footer-divider"></span>
-    <a href="#" class="footer-social-link" target="_blank" title="滑雪宇宙">
+    <!-- 滑雪宇宙 -->
+    <a href="https://www.facebook.com/groups/universnow" class="footer-social-link" target="_blank" title="滑雪宇宙">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
       滑雪宇宙
     </a>
     <span class="footer-divider"></span>
-    <a href="#" class="footer-social-link" target="_blank" title="iSKI IG">
+    <!-- iSKI IG -->
+    <a href="https://www.instagram.com/iskiclub/" class="footer-social-link" target="_blank" title="iSKI IG">
       <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
       iSKI IG
     </a>
     <span class="footer-divider"></span>
-    <a href="https://m.me/iski.tw" class="footer-social-link" target="_blank" title="客服聯繫">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.145 2 11.259c0 2.883 1.308 5.465 3.374 7.234V22l3.079-1.688c.822.226 1.693.347 2.547.347 5.523 0 10-4.145 10-9.259C22 6.145 17.523 2 12 2zm1.007 12.464l-2.548-2.715-4.97 2.715 5.467-5.799 2.61 2.715 4.908-2.715-5.467 5.799z"/></svg>
-      客服聯繫
-    </a>
   </div>
-  <span class="footer-copy">© 2026 iSKI 滑雪俱樂部 · iSKI Club · All rights reserved</span>
 </footer>
 
 <div style="background:#1a1c1e;border-top:1px solid rgba(245,243,239,.06);padding:16px 48px;text-align:center;font-family:'Noto Sans TC',sans-serif;font-size:11px;letter-spacing:1px;color:rgba(245,243,239,.35);line-height:2;">
-  Copyright © 2026 iSKI滑雪俱樂部 All rights reserved．
-  <a href="https://www.iski.com.tw/privacy-policy" target="_blank" style="color:rgba(245,243,239,.45);text-decoration:none;" onmouseover="this.style.color='rgba(245,243,239,.85)'" onmouseout="this.style.color='rgba(245,243,239,.45)'">隱私權政策</a>
+  © 2026 iSKI滑雪俱樂部 All rights reserved<br>
+  <a href="/privacy-policy" target="_blank" style="color:rgba(245,243,239,.45);text-decoration:none;" onmouseover="this.style.color='rgba(245,243,239,.85)'" onmouseout="this.style.color='rgba(245,243,239,.45)'">隱私權政策</a>
   ｜
-  <a href="https://www.iski.com.tw/terms-of-service" target="_blank" style="color:rgba(245,243,239,.45);text-decoration:none;" onmouseover="this.style.color='rgba(245,243,239,.85)'" onmouseout="this.style.color='rgba(245,243,239,.45)'">網站服務條款</a>
+  <a href="/terms-of-service" target="_blank" style="color:rgba(245,243,239,.45);text-decoration:none;" onmouseover="this.style.color='rgba(245,243,239,.85)'" onmouseout="this.style.color='rgba(245,243,239,.45)'">網站服務條款</a>
 </div>
 
-<a href="https://m.me/iski.tw" target="_blank" class="floating-messenger" title="聯絡客服">
-  <svg width="26" height="26" viewBox="0 0 24 24" fill="white"><path d="M12 2C6.477 2 2 6.145 2 11.259c0 2.883 1.308 5.465 3.374 7.234V22l3.079-1.688c.822.226 1.693.347 2.547.347 5.523 0 10-4.145 10-9.259C22 6.145 17.523 2 12 2zm1.007 12.464l-2.548-2.715-4.97 2.715 5.467-5.799 2.61 2.715 4.908-2.715-5.467 5.799z"/></svg>
+<a href="http://m.me/iSKIclub2019" target="_blank" class="floating-messenger" id="floatingMessenger" title="聯絡客服">
+  <svg width="22" height="22" viewBox="0 0 24 24" fill="white" style="flex-shrink:0;"><path d="M12 2C6.477 2 2 6.145 2 11.259c0 2.883 1.308 5.465 3.374 7.234V22l3.079-1.688c.822.226 1.693.347 2.547.347 5.523 0 10-4.145 10-9.259C22 6.145 17.523 2 12 2zm1.007 12.464l-2.548-2.715-4.97 2.715 5.467-5.799 2.61 2.715 4.908-2.715-5.467 5.799z"/></svg>
+  <span class="fm-text">聯絡客服</span>
 </a>
 
 <script>
@@ -999,12 +1102,12 @@
     const btn = document.getElementById('hamburgerBtn');
     menu.classList.toggle('open');
     btn.classList.toggle('open');
-    document.body.style.overflow = menu.classList.contains('open') ? 'hidden' : '';
+    
   }
 
-  // 倒數計時器 — 頭香優惠截止 2026/7/12 23:59:59 台灣時間
+  // 倒數計時器 — 超早鳥優惠截止 2026/8/23 23:59:59 台灣時間
   (function(){
-    const deadline = new Date('2026-07-12T23:59:59+08:00').getTime();
+    const deadline = new Date('2026-08-23T23:59:59+08:00').getTime();
     function pad(n){ return String(n).padStart(2,'0'); }
     function tick(){
       const now = Date.now();
@@ -1045,7 +1148,7 @@ function animRing(){
   requestAnimationFrame(animRing);
 }
 animRing();
-document.querySelectorAll('a,button,.suit-card,.surcharge-item,.cal-block,.note-row,.course-meta-item').forEach(el=>{
+document.querySelectorAll('a,button,.suit-card,.surcharge-item,.cal-block,.note-accordion,.course-meta-item').forEach(el=>{
   el.addEventListener('mouseenter',()=>{
     cursor.style.transform='translate(-50%,-50%) scale(2.5)';
     cursor.style.background='#D4F53C';
@@ -1074,9 +1177,54 @@ window.addEventListener('scroll', () => {
   if (heroBg) heroBg.style.transform = `translateY(${y * 0.35}px)`;
 });
 
+// ── SEASON STACK（淡旺季日期疊卡）──
+var seasonCurrent = 0;
+var seasonTotal = 3;
+
+function seasonUpdateWrapHeight() {
+  var wrap = document.getElementById('seasonStack');
+  if (!wrap || window.innerWidth >= 769) return; // 桌機為 grid 版面，高度交給 CSS auto 處理
+  var cards = wrap.querySelectorAll('.season-card');
+  // 先清除既有高度，量出每張卡片「自然內容高度」
+  cards.forEach(function(card){ card.style.height = 'auto'; });
+  var maxHeight = 0;
+  cards.forEach(function(card){ maxHeight = Math.max(maxHeight, card.offsetHeight); });
+  // 三張卡片統一套用最高卡片的高度，疊卡視覺才會等高
+  cards.forEach(function(card){ card.style.height = maxHeight + 'px'; });
+  wrap.style.height = maxHeight + 'px';
+}
+
+function seasonUpdatePositions() {
+  var cards = document.querySelectorAll('.season-card');
+  cards.forEach(function(card) {
+    var idx = parseInt(card.getAttribute('data-index'));
+    var pos = (idx - seasonCurrent + seasonTotal) % seasonTotal;
+    card.setAttribute('data-pos', pos);
+    card.style.pointerEvents = 'auto';
+  });
+  seasonUpdateWrapHeight();
+}
+
+function seasonCardClick(idx) {
+  if (idx === seasonCurrent) {
+    seasonCurrent = (seasonCurrent + 1) % seasonTotal;
+  } else {
+    seasonCurrent = idx;
+  }
+  seasonUpdatePositions();
+}
+
+function seasonNav(dir) {
+  seasonCurrent = (seasonCurrent + dir + seasonTotal) % seasonTotal;
+  seasonUpdatePositions();
+}
+
+window.addEventListener('load', seasonUpdateWrapHeight);
+window.addEventListener('resize', seasonUpdateWrapHeight);
+
 // ── PRICE CALCULATOR ──
 const state = {
-  tier: 17500,
+  tier: 17900,
   member: 0,
   days: 1,
   multi: 1,
@@ -1110,7 +1258,7 @@ function calcPrice() {
   document.getElementById('totalDisplay').textContent = fmt(grand);
 
   // Sub label
-  const tierNames = {17500:'頭香優惠',17900:'超早鳥',18900:'早鳥',19900:'季前價',20900:'季中價'};
+  const tierNames = {17900:'超早鳥',18900:'早鳥',19900:'季前價',20900:'季中價'};
   const seasonNames = {standard:'標準季', off:'淡季', peak:'旺季'};
   const memberLabel = state.member > 0 ? '非會員' : '會員';
   document.getElementById('resultSub').textContent =
@@ -1145,7 +1293,7 @@ function calcPrice() {
   const multiWrap = document.getElementById('rowMultiWrap');
   if (state.days > 1) {
     multiWrap.style.display = '';
-    document.getElementById('rowMultiLabel').textContent = state.days === 2 ? '連報折扣 (×95%)' : '連報折扣 (×90%)';
+    document.getElementById('rowMultiLabel').textContent = state.days === 2 ? '連報折扣 (95折)' : '連報折扣 (9折)';
     const saving = Math.round(state.tier * state.season * state.days * (1 - state.multi));
     document.getElementById('rowMulti').textContent = `-NT$ ${fmt(saving)}`;
   } else { multiWrap.style.display = 'none'; }
@@ -1223,6 +1371,21 @@ document.getElementById('toggleCoach').addEventListener('change', e => { state.c
 document.getElementById('toggleResort').addEventListener('change', e => { state.resort = e.target.checked; calcPrice(); });
 
 calcPrice();
+
+document.addEventListener('DOMContentLoaded', () => {
+  const fm = document.getElementById('floatingMessenger');
+  if (!fm) return;
+  let fmCollapsed = false;
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 300 && !fmCollapsed) {
+      fm.classList.add('fm-collapsed');
+      fmCollapsed = true;
+    } else if (window.scrollY <= 300 && fmCollapsed) {
+      fm.classList.remove('fm-collapsed');
+      fmCollapsed = false;
+    }
+  });
+});
 </script>
 </body>
 </html>
